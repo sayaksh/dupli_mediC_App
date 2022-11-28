@@ -23,67 +23,68 @@ class PatientList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-        elevation: 3,
-        color: Colors.white,
-        shadowColor: Colors.blueGrey,
-        child: Container(
-          height: 20,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              CircleAvatar(
-                backgroundImage: NetworkImage(pImg),
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    pName,
-                    style: const TextStyle(
-                      fontSize: 16,
-                      // fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 28, 75, 99),
-                    ),
+      elevation: 3,
+      color: Colors.white,
+      shadowColor: Colors.blueGrey,
+      child: Container(
+        height: 20,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            CircleAvatar(
+              backgroundImage: NetworkImage(pImg),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  pName,
+                  style: const TextStyle(
+                    fontSize: 16,
+                    // fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 28, 75, 99),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Text(
-                        pGenger,
-                        style: const TextStyle(
-                          fontSize: 12,
-                          color: Color.fromARGB(255, 71, 102, 117),
-                        ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(
+                      pGenger,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Color.fromARGB(255, 71, 102, 117),
                       ),
-                      const Text(
-                        "|",
-                        style: TextStyle(
-                          fontSize: 13,
-                          color: Colors.amber,
-                        ),
-                      ),
-                      Text(
-                        pDob,
-                        style: const TextStyle(
-                          fontSize: 12,
-                          color: Colors.blueGrey,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    "view",
-                    style: TextStyle(
-                      fontSize: 10,
-                      color: Colors.amber,
                     ),
-                  ))
-            ],
-          ),
-        ));
+                    const Text(
+                      "|",
+                      style: TextStyle(
+                        fontSize: 13,
+                        color: Colors.amber,
+                      ),
+                    ),
+                    Text(
+                      pDob,
+                      style: const TextStyle(
+                        fontSize: 12,
+                        color: Colors.blueGrey,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            TextButton(
+                onPressed: () {},
+                child: const Text(
+                  "view",
+                  style: TextStyle(
+                    fontSize: 10,
+                    color: Colors.amber,
+                  ),
+                ))
+          ],
+        ),
+      ),
+    );
   }
 }

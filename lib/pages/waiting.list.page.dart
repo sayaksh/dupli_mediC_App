@@ -159,7 +159,7 @@ class _PatientWaitingPageState extends State<PatientWaitingPage> {
                 crossAxisCount: 3,
                 crossAxisSpacing: 5,
                 childAspectRatio: 16 / 4,
-                mainAxisSpacing: 5),
+                mainAxisSpacing: 2),
             itemCount: medi_list.length,
             itemBuilder: (context, index) {
               return PatientList(
